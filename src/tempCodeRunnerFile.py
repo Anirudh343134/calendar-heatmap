@@ -1,0 +1,1 @@
+"$and":[{{"_created":{{"$gte":"{start_time}"}}}},{{"_created":{{"$lt":"{end_time}"}}}}]}}&max_results=500000'
