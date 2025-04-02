@@ -75,7 +75,7 @@ const CalMap = ({ deviceId, dataType, title }: { deviceId: string; dataType: str
         data={data}
         timeRange={timeRange}
         width={"450px"} 
-        showWeekends={true}
+        weekday="weekend"
         fillToWidth={false}
       />
     </div>
