@@ -28,8 +28,6 @@ def fetch_data(start_time, end_time):
     if response.status_code == 200:
         res = response.json()
         df = pd.DataFrame.from_dict(pd.json_normalize(res['_items']), orient='columns')
-        print(df.columns)
-        print(df['Sensor_ID'].unique())
         return df
     else:
         return None
